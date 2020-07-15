@@ -30,14 +30,6 @@ console.log('apple')
 
 
 const Flight= mongoose.model('Flight',ap)
-// ap.save().then((ap)=>
-//     {
-//         console.log(ap)
 
-//     }).catch((error)=>
-//     {
-//         console.log(error)
-
-//     })
 
 module.exports=Flight

@@ -42,30 +42,17 @@ const ap=new mongoose.Schema({
 },{
     timestamps:true
    
-// const ap=new target({
-//     desc:'New task',
-    
-// })
+
 })
 
 ap.pre('save',async function(op){
 
     const m=this
-    //if(m.isModified(password))
 console.log('apple')
     op()
 })
 
 
 const User= mongoose.model('User',ap)
-// ap.save().then((ap)=>
-//     {
-//         console.log(ap)
-
-//     }).catch((error)=>
-//     {
-//         console.log(error)
-
-//     })
 
 module.exports=User
